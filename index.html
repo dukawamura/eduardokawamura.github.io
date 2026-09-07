@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Kawamura | Portfólio Ágil</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        primary: '#0f172a', /* Slate 900 */
+                        secondary: '#2563eb', /* Blue 600 */
+                        accent: '#10b981', /* Emerald 500 */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in { animation: fadeIn 1s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tight text-primary">Edu<span class="text-secondary">Kawamura</span></span>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#sobre" class="hover:text-secondary transition-colors">Sobre</a>
+                <a href="#cases" class="hover:text-secondary transition-colors">Cases de Sucesso</a>
+                <a href="#experiencia" class="hover:text-secondary transition-colors">Experiência</a>
+                <a href="#contato" class="hover:text-secondary transition-colors">Contato</a>
+            </div>
+            <a href="#contato" class="bg-secondary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors shadow-sm">Vamos Conversar</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 bg-gradient-to-b from-slate-100 to-slate-50">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 fade-in">
+            <div class="md:w-3/5 space-y-6">
+                <div class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase">
+                    Scrum Master Sênior & Especialista Ágil
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-primary leading-tight">
+                    Transformando complexidade em <span class="text-secondary">fluxos de valor</span> contínuos.
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                    Com mais de 19 anos de experiência consolidada em tecnologia e agilidade corporativa, ajudo organizações a orquestrar times de alta performance, unindo a filosofia Kaizen com as novas fronteiras da Inteligência Artificial.
+                </p>
+                <div class="flex gap-4 pt-4">
+                    <a href="#cases" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition-all shadow-md">Ver Cases</a>
+                    <a href="https://linkedin.com/in/eduardo-kawamura" target="_blank" class="flex items-center gap-2 bg-white text-slate-700 border border-slate-300 px-6 py-3 rounded-lg font-semibold hover:bg-slate-50 transition-all shadow-sm">
+                        <i class="fa-brands fa-linkedin text-[#0A66C2] text-xl"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-2/5 flex justify-center">
+                <!-- Imagem de Perfil / Placeholder abstrato de agilidade -->
+                <div class="relative w-72 h-72 md:w-96 md:h-96 bg-slate-200 rounded-full shadow-2xl overflow-hidden border-8 border-white flex items-center justify-center">
+                    <i class="fa-solid fa-code-branch text-6xl text-slate-400 opacity-50"></i>
+                    <!-- Para usar uma foto sua: substitua o conteúdo desta div por <img src="URL_DA_SUA_FOTO" alt="Edu Kawamura" class="w-full h-full object-cover"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases de Sucesso -->
+    <section id="cases" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Cases de Sucesso & Mudança</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+                <p class="text-slate-600 mt-4 max-w-2xl mx-auto">Exemplos práticos de como liderei a gestão de mudanças e a adoção de metodologias ágeis em ambientes corporativos de alta complexidade.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
+                        <i class="fa-solid fa-seedling text-secondary text-xl group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">A Mudança Cultural do Zero</h3>
+                    <p class="text-sm text-slate-500 font-semibold mb-4">SAMSUNG</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Pioneirismo na adoção da cultura ágil. Atuei como principal agente de mudança para implementar frameworks (Scrum/Kanban) em um departamento até então tradicional.
+                    </p>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Evangelização e mudança de mindset.</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Configuração de ponta a ponta do Jira.</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Aumento exponencial na visibilidade do fluxo.</li>
+                    </ul>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent transition-colors">
+                        <i class="fa-solid fa-network-wired text-accent text-xl group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Agilidade em Escala (SAFe)</h3>
+                    <p class="text-sm text-slate-500 font-semibold mb-4">B3 & BRADESCO</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Orquestração de múltiplos squads operando dentro de um Agile Release Train (ART) no mercado financeiro, garantindo alinhamento estratégico contínuo.
+                    </p>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Facilitação de PI Plannings e System Demos.</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Blindagem de times contra impedimentos.</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Alto índice de previsibilidade (Say/Do).</li>
+                    </ul>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fa-solid fa-shield-halved text-purple-600 text-xl group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">InfoSec aliada à Velocidade</h3>
+                    <p class="text-sm text-slate-500 font-semibold mb-4">GESTÃO LATAM</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Desmistificação de que a segurança bloqueia a agilidade. Liderança de projetos de Data Loss Prevention (DLP) integrados ao fluxo contínuo de valor.
+                    </p>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Operações de segurança na América Latina.</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Conformidade sem atrito operacional.</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i> Shift-left security mindset.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades & Toolkit -->
+    <section class="py-20 px-4 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-6">Meu Toolkit Técnico e Metodológico</h2>
+                <p class="text-slate-400 mb-8 leading-relaxed">Acredito na melhoria contínua. Por isso, integro minha forte base em frameworks ágeis e de gestão (certificações internacionais) com as tecnologias emergentes, como Prompt Engineering, para escalar a produtividade do time.</p>
+                
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg text-sm font-medium"><i class="fa-solid fa-rotate mr-2 text-secondary"></i>Scrum & Kanban</span>
+                    <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg text-sm font-medium"><i class="fa-solid fa-sitemap mr-2 text-secondary"></i>SAFe 5.1</span>
+                    <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg text-sm font-medium"><i class="fa-solid fa-robot mr-2 text-accent"></i>Prompt Engineering & IA</span>
+                    <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg text-sm font-medium"><i class="fa-solid fa-lock mr-2 text-purple-400"></i>InfoSec / DLP</span>
+                    <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg text-sm font-medium"><i class="fa-solid fa-chart-gantt mr-2 text-blue-400"></i>Jira (Advanced JQL)</span>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 grid grid-cols-2 gap-6">
+                <!-- Certificações -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                    <h4 class="font-bold text-lg mb-2">PSM I</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-wide">Professional Scrum Master</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                    <h4 class="font-bold text-lg mb-2">SAFe</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-wide">Agilist Certified</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                    <h4 class="font-bold text-lg mb-2">KMP</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-wide">Kanban Management</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                    <h4 class="font-bold text-lg mb-2">Tecnólogo</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-wide">Análise de Sistemas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resumo de Experiência -->
+    <section id="experiencia" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-primary mb-10 text-center">Jornada Profissional</h2>
+            
+            <div class="relative border-l-2 border-slate-200 ml-3 md:ml-0 md:pl-0 space-y-10">
+                <!-- Item 1 -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
+                    <div class="md:ml-10 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-xs font-bold text-secondary uppercase tracking-wider">2022 – 2026</span>
+                        <h3 class="text-lg font-bold text-primary mt-1">Scrum Master | MJV (B3)</h3>
+                        <p class="text-slate-600 mt-2 text-sm">Liderança da transformação ágil em 3 squads distintos. Forte atuação no alinhamento estratégico em fóruns de escala (SM Sync, ART Sync) e garantia de qualidade técnica.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
+                    <div class="md:ml-10 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2021 – 2022</span>
+                        <h3 class="text-lg font-bold text-primary mt-1">Scrum Master | NTT DATA (Bradesco)</h3>
+                        <p class="text-slate-600 mt-2 text-sm">Facilitação core e orquestração no Scrum of Scrums (SoS). Acompanhamento de métricas focadas em Value Stream Management.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="hidden md:block absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
+                    <div class="md:ml-10 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2011 – 2021</span>
+                        <h3 class="text-lg font-bold text-primary mt-1">Agile Master & Especialista em InfoSec | Samsung</h3>
+                        <p class="text-slate-600 mt-2 text-sm">Transição robusta de líder de Segurança da Informação (DLP LATAM) para a introdução pioneira do modelo Ágil, provando que governança e eficiência caminham juntas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contato -->
+    <footer id="contato" class="bg-white border-t border-slate-200 pt-16 pb-8 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold text-primary">Vamos construir algo incrível.</h3>
+                <p class="text-slate-500 mt-2">Aberto a oportunidades e conexões globais.</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="mailto:eduardokawamura@email.com" class="w-12 h-12 bg-slate-100 flex items-center justify-center rounded-full text-slate-600 hover:bg-secondary hover:text-white transition-colors">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/eduardo-kawamura" target="_blank" class="w-12 h-12 bg-slate-100 flex items-center justify-center rounded-full text-slate-600 hover:bg-[#0A66C2] hover:text-white transition-colors">
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 text-center border-t border-slate-100 pt-8 text-sm text-slate-400">
+            <p>&copy; 2026 Edu Kawamura. Baseado em São Paulo, SP, Brasil.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
