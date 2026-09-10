@@ -16,9 +16,9 @@
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
-                        primary: '#0f172a', /* Slate 900 */
-                        secondary: '#2563eb', /* Blue 600 */
-                        accent: '#10b981', /* Emerald 500 */
+                        primary: '#0f172a',
+                        secondary: '#2563eb',
+                        accent: '#10b981',
                     }
                 }
             }
@@ -27,10 +27,10 @@
     <style>
         .fade-in { animation: fadeIn 1s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        
-        /* Language Toggle Classes */
         body.lang-pt .en-only { display: none !important; }
         body.lang-en .pt-only { display: none !important; }
+        /* Add some padding for broken image placeholders just in case */
+        img { min-height: 1px; min-width: 1px; }
     </style>
     <script>
         function toggleLanguage() {
@@ -70,7 +70,6 @@
             </div>
             
             <div class="flex items-center gap-3">
-                <!-- Botão de Tradução -->
                 <button onclick="toggleLanguage()" class="flex items-center gap-2 bg-slate-200 text-slate-700 px-3 py-2 rounded-lg text-sm font-semibold hover:bg-slate-300 transition-colors shadow-sm" title="Change Language / Mudar Idioma">
                     <i class="fa-solid fa-globe"></i>
                     <span class="pt-only">EN</span>
@@ -85,7 +84,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="sobre" class="pt-32 pb-20 px-4 bg-gradient-to-b from-slate-100 to-slate-50">
+    <section id="sobre" class="pt-32 pb-10 px-4 bg-gradient-to-b from-slate-100 to-slate-50">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 fade-in">
             <div class="md:w-3/5 space-y-6">
                 <div class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase">
@@ -117,7 +116,6 @@
                 </div>
             </div>
             <div class="md:w-2/5 flex justify-center">
-                <!-- Imagem de Perfil Placeholder -->
                 <div class="relative w-72 h-72 md:w-96 md:h-96 bg-slate-200 rounded-full shadow-2xl overflow-hidden border-8 border-white flex items-center justify-center">
                     <i class="fa-solid fa-code-branch text-6xl text-slate-400 opacity-50"></i>
                 </div>
@@ -125,8 +123,53 @@
         </div>
     </section>
 
+    <!-- Storytelling: Apple -->
+    <section id="storytelling" class="py-12 px-4 bg-slate-50">
+        <div class="max-w-5xl mx-auto bg-white border border-slate-200 rounded-2xl p-8 md:p-10 shadow-sm relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 p-8 opacity-5 pointer-events-none">
+                <img src="https://logo.clearbit.com/apple.com" alt="Apple Background" class="w-64 h-64 object-contain">
+            </div>
+            
+            <div class="flex items-center gap-6 mb-6 relative z-10">
+                <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center p-3 border border-slate-100">
+                    <img src="https://logo.clearbit.com/apple.com" alt="Apple Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-primary">
+                        <span class="pt-only">Minha Origem</span><span class="en-only">My Origin</span>
+                    </h2>
+                    <p class="text-secondary font-medium">Apple</p>
+                </div>
+            </div>
+            
+            <div class="relative z-10 mb-8">
+                <p class="text-slate-700 leading-relaxed text-lg pt-only">
+                    <strong>Tudo começou com o estágio na Apple.</strong> Aquela oportunidade abriu meus olhos para a inovação em seu estado mais puro e me permitiu vivenciar a história da tecnologia sendo escrita em tempo real. Tive o privilégio de estar lá durante a transição épica dos computadores Mac para os processadores Intel, presenciei o lançamento do icônico primeiro MacBook Air — vendo de perto que ele, de fato, cabia perfeitamente dentro de um envelope pardo —, e senti a mudança tectônica no mundo quando lançaram o primeiro iPhone. Essa base focada em excelência, design meticuloso e experiência do usuário cimentou a mentalidade de melhoria contínua que levo para cada projeto na minha carreira.
+                </p>
+                <p class="text-slate-700 leading-relaxed text-lg en-only">
+                    <strong>It all started with an internship at Apple.</strong> That opportunity opened my eyes to innovation in its purest form and allowed me to experience the history of technology being written in real-time. I had the privilege of being there during the epic transition of Mac computers to Intel processors, witnessed the launch of the iconic first MacBook Air — seeing firsthand that it actually fit perfectly inside a manila envelope —, and felt the tectonic shift in the world when they released the first iPhone. This foundation, built on excellence, meticulous design, and user experience, cemented the mindset of continuous improvement that I bring to every project in my career.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 relative z-10">
+                <!-- iPhone Section -->
+                <div class="bg-slate-100 rounded-xl overflow-hidden border border-slate-200 shadow-sm group flex flex-col items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Original_iPhone_in_hand_-_cropped.jpg/640px-Original_iPhone_in_hand_-_cropped.jpg" alt="Primeiro iPhone" class="w-full h-56 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-3 bg-white text-center text-sm font-semibold text-slate-600 pt-only w-full">O Lançamento do Primeiro iPhone</div>
+                    <div class="p-3 bg-white text-center text-sm font-semibold text-slate-600 en-only w-full">The Launch of the First iPhone</div>
+                </div>
+                <!-- MacBook Air Section -->
+                <div class="bg-slate-100 rounded-xl overflow-hidden border border-slate-200 shadow-sm group flex flex-col items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Steve_Jobs_presents_MacBook_Air_-_Macworld_2008.jpg/640px-Steve_Jobs_presents_MacBook_Air_-_Macworld_2008.jpg" alt="MacBook Air no Envelope" class="w-full h-56 object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-3 bg-white text-center text-sm font-semibold text-slate-600 pt-only w-full">O Inesquecível MacBook Air no Envelope Pardo</div>
+                    <div class="p-3 bg-white text-center text-sm font-semibold text-slate-600 en-only w-full">The Unforgettable MacBook Air in a Manila Envelope</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Jornada Profissional / Cases -->
-    <section id="jornada" class="py-20 px-4 bg-white">
+    <section id="jornada" class="pt-10 pb-20 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-primary mb-4">
@@ -138,45 +181,45 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Case 1 -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
-                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
-                        <i class="fa-solid fa-seedling text-secondary text-xl group-hover:text-white"></i>
+                <!-- Case 1: Samsung + InfoSec -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group relative">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-6 shadow-sm p-2 border border-slate-200">
+                        <img src="https://logo.clearbit.com/samsung.com" alt="Samsung Logo" class="w-full h-full object-contain">
                     </div>
                     <h3 class="text-xl font-bold text-primary mb-3">
-                        <span class="pt-only">A Mudança Cultural do Zero</span><span class="en-only">Cultural Change from Scratch</span>
+                        <span class="pt-only">Mudança Cultural & InfoSec</span><span class="en-only">Cultural Change & InfoSec</span>
                     </h3>
                     <p class="text-sm text-slate-500 font-semibold mb-4">SAMSUNG</p>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4 pt-only">Pioneirismo na adoção da cultura ágil. Atuei como principal agente de mudança para implementar frameworks em um departamento até então tradicional.</p>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4 en-only">Pioneered the adoption of agile culture. Acted as the main change agent to implement frameworks in a previously traditional department.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4 pt-only">Pioneirismo na adoção da cultura ágil atuando como principal agente de mudança num departamento tradicional. Liderança de projetos de Data Loss Prevention (DLP) integrados ao fluxo de valor contínuo, desmistificando o bloqueio da segurança aliada à velocidade.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4 en-only">Pioneered agile culture adoption as the main change agent in a traditional department. Led Data Loss Prevention (DLP) projects integrated into the continuous value stream, demystifying the idea that security blocks agility and speed.</p>
                 </div>
 
-                <!-- Case 2 -->
+                <!-- Case 2: Bradesco -->
                 <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent transition-colors">
-                        <i class="fa-solid fa-network-wired text-accent text-xl group-hover:text-white"></i>
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-6 shadow-sm p-2 border border-slate-200">
+                        <img src="https://logo.clearbit.com/bradesco.com.br" alt="Bradesco Logo" class="w-full h-full object-contain">
                     </div>
                     <h3 class="text-xl font-bold text-primary mb-3">
-                        <span class="pt-only">Agilidade em Escala (SAFe)</span><span class="en-only">Scaled Agility (SAFe)</span>
+                        <span class="pt-only">Gestão de Risco e Stakeholders</span><span class="en-only">Risk & Stakeholders Mgmt</span>
                     </h3>
-                    <p class="text-sm text-slate-500 font-semibold mb-4">B3 & BRADESCO</p>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4 pt-only">Orquestração de múltiplos squads operando dentro de um Agile Release Train (ART) no mercado financeiro, garantindo alinhamento estratégico contínuo.</p>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4 en-only">Orchestrated multiple squads operating within an Agile Release Train (ART) in the financial market, ensuring continuous strategic alignment.</p>
+                    <p class="text-sm text-slate-500 font-semibold mb-4">BRADESCO</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4 pt-only">Forte atuação em gestão de risco no ambiente bancário, alinhando constantemente expectativas de stakeholders críticos. Trabalho direto com PMs, VSMs e VSOs garantindo operações seguras num Agile Release Train (SAFe).</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4 en-only">Strong focus on risk management in the banking environment, constantly aligning critical stakeholders' expectations. Worked directly with PMs, VSMs, and VSOs ensuring safe operations within an Agile Release Train (SAFe).</p>
                 </div>
 
-                <!-- Case 3 -->
+                <!-- Case 3: B3 -->
                 <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-shadow group">
-                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors">
-                        <i class="fa-solid fa-shield-halved text-purple-600 text-xl group-hover:text-white"></i>
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-6 shadow-sm p-3 border border-slate-200">
+                        <img src="https://logo.clearbit.com/b3.com.br" alt="B3 Logo" class="w-full h-full object-contain">
                     </div>
                     <h3 class="text-xl font-bold text-primary mb-3">
-                        <span class="pt-only">InfoSec aliada à Velocidade</span><span class="en-only">InfoSec Aligned with Speed</span>
+                        <span class="pt-only">Transformação Ágil e Evangelização</span><span class="en-only">Agile Transformation & Evangelization</span>
                     </h3>
                     <p class="text-sm text-slate-500 font-semibold mb-4">
-                        <span class="pt-only">GESTÃO LATAM</span><span class="en-only">LATAM MANAGEMENT</span>
+                        B3
                     </p>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4 pt-only">Liderança de projetos de Data Loss Prevention (DLP) integrados ao fluxo contínuo de valor, desmistificando o bloqueio da segurança.</p>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4 en-only">Led Data Loss Prevention (DLP) projects integrated into the continuous value stream, demystifying the idea that security blocks agility.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4 pt-only">Atuação focada na transformação digital, facilitando cerimônias e evangelizando times com princípios do mindset ágil. Orquestração de múltiplos squads de alta performance colaborando para evolução contínua da bolsa de valores.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4 en-only">Focused on digital transformation, facilitating ceremonies and evangelizing teams with agile mindset principles. Orchestrated multiple high-performance squads collaborating for the continuous evolution of the stock exchange.</p>
                 </div>
             </div>
         </div>
@@ -222,10 +265,10 @@
                     </h3>
                     <p class="text-sm text-slate-500 font-semibold mb-4">VILA CARRÃO</p>
                     <p class="text-slate-600 text-sm leading-relaxed pt-only">
-                        Planejamento logístico rigoroso da devolução do antigo apartamento (Rua Pantojo) e mudança ágil para a nova residência na Rua Engenheiro Pegado, garantindo zero atrasos e otimização total de recursos familiares.
+                        Planejamento logístico rigoroso da devolução do antigo apartamento na Vila Regente Feijó e mudança ágil para a nova residência na Vila Carrão, garantindo zero atrasos e otimização total de recursos familiares.
                     </p>
                     <p class="text-slate-600 text-sm leading-relaxed en-only">
-                        Rigorous logistical planning for the return of the old apartment (Rua Pantojo) and swift relocation to the new residence on Rua Engenheiro Pegado, ensuring zero delays and total optimization of family resources.
+                        Rigorous logistical planning for the return of the old apartment in Vila Regente Feijó and swift relocation to the new residence in Vila Carrão, ensuring zero delays and total optimization of family resources.
                     </p>
                 </div>
 
@@ -275,135 +318,58 @@
             
             <div class="md:w-1/2 grid grid-cols-2 gap-6">
                 <!-- Certificações -->
-                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center flex flex-col items-center justify-center">
                     <h4 class="font-bold text-lg mb-2">PSM I</h4>
                     <p class="text-xs text-slate-400 uppercase tracking-wide">Professional Scrum Master</p>
                 </div>
-                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
-                    <h4 class="font-bold text-lg mb-2">SAFe</h4>
-                    <p class="text-xs text-slate-400 uppercase tracking-wide">Agilist Certified</p>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center flex flex-col items-center justify-center">
+                    <h4 class="font-bold text-lg mb-2">SAFe 5.1</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-wide">Scaled Agile Framework</p>
                 </div>
-                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center flex flex-col items-center justify-center">
                     <h4 class="font-bold text-lg mb-2">KMP</h4>
-                    <p class="text-xs text-slate-400 uppercase tracking-wide">Kanban Management</p>
+                    <p class="text-xs text-slate-400 uppercase tracking-wide">Kanban Management Prof.</p>
                 </div>
-                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
-                    <h4 class="font-bold text-lg mb-2 pt-only">Tecnólogo</h4>
-                    <h4 class="font-bold text-lg mb-2 en-only">Degree</h4>
-                    <p class="text-xs text-slate-400 uppercase tracking-wide pt-only">Análise de Sistemas</p>
-                    <p class="text-xs text-slate-400 uppercase tracking-wide en-only">Systems Analysis</p>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center flex flex-col items-center justify-center">
+                    <h4 class="font-bold text-lg mb-2">Google</h4>
+                    <p class="text-xs text-slate-400 uppercase tracking-wide">AI for Content Creation</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Histórico de Empresas -->
-    <section class="py-20 px-4 bg-slate-50">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-primary mb-10 text-center pt-only">Histórico de Empresas</h2>
-            <h2 class="text-3xl font-bold text-primary mb-10 text-center en-only">Career History</h2>
+    <!-- Contato -->
+    <section id="contato" class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-primary mb-4">
+                <span class="pt-only">Vamos Conversar?</span><span class="en-only">Let's Talk?</span>
+            </h2>
+            <div class="w-20 h-1 bg-secondary mx-auto rounded-full mb-8"></div>
             
-            <div class="relative border-l-2 border-slate-200 ml-3 md:ml-0 md:pl-0 space-y-10">
-                <!-- Item 1: MJV -->
-                <div class="relative pl-8 md:pl-0">
-                    <div class="hidden md:block absolute w-4 h-4 bg-secondary rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
-                    <div class="md:ml-10 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                        <span class="text-xs font-bold text-secondary uppercase tracking-wider">2022 – 2026</span>
-                        <h3 class="text-lg font-bold text-primary mt-1">Scrum Master | MJV (B3)</h3>
-                        
-                        <ul class="list-disc pl-4 mt-4 text-sm text-slate-600 space-y-2 pt-only">
-                            <li><strong>Liderei a transformação ágil</strong> em 3 squads distintos, promovendo melhoria contínua, maturidade ágil e previsibilidade de entregas.</li>
-                            <li><strong>Orquestrei e facilitei</strong> cerimônias ágeis locais e em escala (PI Planning, Dailies, Plannings, Reviews e Retrospectivas).</li>
-                            <li><strong>Alinhamento estratégico</strong> no Agile Release Train (ART) via forte parceria e colaboração ativa em fóruns de escala (SM Sync e ART Sync).</li>
-                            <li><strong>Atuei como líder servidor</strong>, blindando o time contra impedimentos externos e garantindo a qualidade técnica via DoR e DoD.</li>
-                        </ul>
-                        
-                        <ul class="list-disc pl-4 mt-4 text-sm text-slate-600 space-y-2 en-only">
-                            <li><strong>Led the agile transformation</strong> across 3 distinct squads, fostering continuous improvement, agile maturity, and delivery predictability.</li>
-                            <li><strong>Orchestrated and facilitated</strong> local and scaled agile ceremonies (PI Planning, Dailies, Plannings, Reviews, and Retrospectives).</li>
-                            <li><strong>Strategic alignment</strong> within the Agile Release Train (ART) through strong partnership and active collaboration in scaled forums (SM Sync and ART Sync).</li>
-                            <li><strong>Acted as a servant leader</strong>, shielding the team from external impediments and ensuring technical quality through DoR and DoD.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Item 2: NTT DATA -->
-                <div class="relative pl-8 md:pl-0">
-                    <div class="hidden md:block absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
-                    <div class="md:ml-10 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2021 – 2022</span>
-                        <h3 class="text-lg font-bold text-primary mt-1">Scrum Master | NTT DATA (Bradesco)</h3>
-                        
-                        <ul class="list-disc pl-4 mt-4 text-sm text-slate-600 space-y-2 pt-only">
-                            <li><strong>Facilitei as cerimônias ágeis core</strong>, promovendo alta eficiência de agendas, colaboração e rigor no cumprimento de timeboxes.</li>
-                            <li><strong>Sincronização diária em escala</strong> no Scrum of Scrums (SoS) com outros Scrum Masters e o Release Train Engineer (RTE).</li>
-                            <li><strong>Apresentação de incrementos</strong> a stakeholders na System Demo e reporte de progresso diário à VSM (Value Stream Management).</li>
-                        </ul>
-                        
-                        <ul class="list-disc pl-4 mt-4 text-sm text-slate-600 space-y-2 en-only">
-                            <li><strong>Facilitated core agile ceremonies</strong>, driving high meeting efficiency, collaboration, and strict adherence to timeboxes.</li>
-                            <li><strong>Daily scaled synchronization</strong> in Scrum of Scrums (SoS) with other Scrum Masters and the Release Train Engineer (RTE).</li>
-                            <li><strong>Presented increments</strong> to senior stakeholders during System Demos and reported daily metric progress to VSM (Value Stream Management).</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Item 3: Samsung -->
-                <div class="relative pl-8 md:pl-0">
-                    <div class="hidden md:block absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1.5 ring-4 ring-white"></div>
-                    <div class="md:ml-10 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2011 – 2021</span>
-                        <h3 class="text-lg font-bold text-primary mt-1 pt-only">Agile Master & Especialista em InfoSec | Samsung</h3>
-                        <h3 class="text-lg font-bold text-primary mt-1 en-only">Agile Master & InfoSec Specialist | Samsung</h3>
-                        
-                        <ul class="list-disc pl-4 mt-4 text-sm text-slate-600 space-y-2 pt-only">
-                            <li><strong>Transformação Ágil (Último ano):</strong> Fui pioneiro na implementação do zero de práticas ágeis (Scrum/Kanban) no departamento, orquestrando cerimônias e gerenciando o Jira para maximizar a visibilidade do fluxo.</li>
-                            <li><strong>Gestão de InfoSec e DLP (LATAM):</strong> Liderei operações de Segurança da Informação para a América Latina, gerenciando políticas e sistemas de Data Loss Prevention (DLP) para proteger dados sensíveis e garantir conformidade corporativa.</li>
-                            <li><strong>Melhoria Contínua:</strong> Atuei como agente de mudança, unindo requisitos críticos de segurança com fluxos ágeis e removendo impedimentos ativamente.</li>
-                        </ul>
-                        
-                        <ul class="list-disc pl-4 mt-4 text-sm text-slate-600 space-y-2 en-only">
-                            <li><strong>Agile Transformation (Final Year):</strong> Pioneered the ground-up implementation of Agile practices (Scrum/Kanban) in the department, orchestrating ceremonies and managing Jira to maximize workflow visibility.</li>
-                            <li><strong>InfoSec & DLP Management (LATAM):</strong> Led Information Security operations across Latin America, managing Data Loss Prevention (DLP) policies and systems to protect sensitive corporate data and ensure strict compliance.</li>
-                            <li><strong>Continuous Improvement:</strong> Acted as a cultural change agent, bridging critical security requirements with agile workflows and proactively removing team impediments.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p class="text-slate-600 mb-6 text-lg pt-only">Estou sempre aberto a discutir sobre agilidade, transformação digital e novos desafios. Atualmente baseado na Vila Carrão, São Paulo, SP.</p>
+            <p class="text-slate-600 mb-6 text-lg en-only">I am always open to discussing agility, digital transformation, and new challenges. Currently based in Vila Carrão, São Paulo, SP.</p>
 
-    <!-- Footer / Contato -->
-    <footer id="contato" class="bg-white border-t border-slate-200 pt-16 pb-8 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-            <div class="text-center md:text-left">
-                <h3 class="text-2xl font-bold text-primary pt-only">Vamos construir algo incrível.</h3>
-                <h3 class="text-2xl font-bold text-primary en-only">Let's build something amazing.</h3>
-                
-                <p class="text-slate-500 mt-2 pt-only">Aberto a oportunidades e conexões globais.</p>
-                <p class="text-slate-500 mt-2 en-only">Open to global opportunities and connections.</p>
-                
-                <div class="mt-6 flex flex-col gap-2 text-sm font-medium">
-                    <a href="mailto:eduardokawamura@gmail.com" class="text-slate-600 hover:text-secondary flex items-center justify-center md:justify-start gap-2 transition-colors">
-                        <i class="fa-solid fa-envelope text-lg w-5"></i> eduardokawamura@gmail.com
-                    </a>
-                    <a href="tel:+5511974374900" class="text-slate-600 hover:text-secondary flex items-center justify-center md:justify-start gap-2 transition-colors">
-                        <i class="fa-brands fa-whatsapp text-lg w-5"></i> +55 11 97437-4900
-                    </a>
-                </div>
+            <div class="flex items-center justify-center gap-3 text-slate-600 mb-10 text-lg font-medium">
+                <i class="fa-solid fa-phone text-secondary"></i>
+                <a href="tel:+5511974374900" class="hover:text-primary transition-colors">+55 11 97437-4900</a>
             </div>
-            
-            <div class="flex justify-center gap-4 mt-6 md:mt-0">
-                <a href="https://linkedin.com/in/eduardo-kawamura" target="_blank" class="w-12 h-12 bg-slate-100 flex items-center justify-center rounded-full text-slate-600 hover:bg-[#0A66C2] hover:text-white transition-colors shadow-sm">
-                    <i class="fa-brands fa-linkedin text-xl"></i>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="https://linkedin.com/in/eduardo-kawamura" target="_blank" class="flex items-center gap-3 bg-[#0A66C2] text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-800 transition-all shadow-md w-full md:w-auto justify-center">
+                    <i class="fa-brands fa-linkedin text-2xl"></i>
+                    LinkedIn
+                </a>
+                
+                <a href="mailto:contato@eduardokawamura.com" class="flex items-center gap-3 bg-slate-800 text-white px-8 py-4 rounded-xl font-semibold hover:bg-slate-900 transition-all shadow-md w-full md:w-auto justify-center">
+                    <i class="fa-solid fa-envelope text-2xl"></i>
+                    <span class="pt-only">Enviar E-mail</span><span class="en-only">Send Email</span>
                 </a>
             </div>
         </div>
-        
-        <div class="max-w-6xl mx-auto mt-12 text-center border-t border-slate-100 pt-8 text-sm text-slate-400">
-            <p class="pt-only">&copy; 2026 Eduardo Kawamura. Baseado em São Paulo, SP, Brasil.</p>
-            <p class="en-only">&copy; 2026 Eduardo Kawamura. Based in São Paulo, SP, Brazil.</p>
-        </div>
+    </section>
+
+    <footer class="bg-slate-50 py-8 text-center border-t border-slate-200 text-slate-500 text-sm">
+        <p>&copy; 2026 Eduardo Kawamura. <span class="pt-only">Todos os direitos reservados.</span><span class="en-only">All rights reserved.</span></p>
     </footer>
 
 </body>
